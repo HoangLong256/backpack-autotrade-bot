@@ -2,9 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const backpack_client_1 = require("./backpack_client");
 
-/// EDIT HERE ///
-const API_KEY = "VC2jGOXfxxxxxxxxxxxxxxxxxxxx="
-const API_SECRET = "EaIvdhigkxxxxxxxxxxxxxxxx="
+const args = process.argv;
+const API_KEY = args[2];
+const API_SECRET = args[3];
+
+console.log("Running Backpack Auto Trading Bot");
+console.log("API_KEY:", API_KEY);
+console.log("API_SECRET:", API_SECRET);
+
 /////////////
 
 function delay(ms) {
